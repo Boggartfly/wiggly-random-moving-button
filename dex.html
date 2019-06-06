@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Hamlet’s soliloquy</title>
+    <style>
+        body {
+            padding: 25px;
+        }
+        #img .icon:nth-child(2n) {
+            animation-name: keyframes1;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 10%;
+        }
+        #img .icon:nth-child(2n-1) {
+            animation-name: keyframes2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-origin: 30% 5%;
+        }
+        #textbox .icon:nth-child(2n) {
+            animation-name: keyframes1;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 10%;
+        }
+        #textbox .icon:nth-child(2n-1) {
+            animation-name: keyframes2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-origin: 30% 5%;
+        }
+        #main {
+            width: 450px;
+        }
+        #main .icon {
+            padding: 20px;
+            border-radius: 80px;
+            background-color: red !important;
+            position:absolute;
+            top:10px;
+            left:10px;
+            height: 128px !important;
+            width: 128px !important;
+        }
+ 
+        #main .icon:nth-child(2n) {
+            animation-name: keyframes1;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 10%;
+        }
+         
+        #main .icon:nth-child(2n-1) {
+            animation-name: keyframes2;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-origin: 30% 5%;
+        }
+        #smallHeading .heading {
+            font-size: 0.5em
+        }
+        @keyframes keyframes1 {
+            0% {
+                transform: rotate(-1deg);
+                animation-timing-function: ease-in;
+            }
+            50% {
+                transform: rotate(1.5deg);
+                animation-timing-function: ease-out;
+            }
+        }
+         
+        @keyframes keyframes2 {
+            0% {
+                transform: rotate(1deg);
+                animation-timing-function: ease-in;
+            }
+            50% {
+                transform: rotate(-1.5deg);
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="smallHeading"><a href="index.html" class="heading">Back to Home Page</a></div>
+    <h3 style="text-align:center">Hamlet’s soliloquy</h3>
+    <p style="text-align:center">To be, or not to be? That is the question—<br><br>
+
+        Whether ’tis nobler in the mind to suffer<br><br>
+        
+        The slings and arrows of outrageous fortune,<br><br>
+        
+        Or to take arms against a sea of troubles,<br><br>
+        
+        And, by opposing, end them? To die, to sleep—<br><br>
+        
+        No more—and by a sleep to say we end<br><br>
+        
+        The heartache and the thousand natural shocks<br><br>
+        
+        That flesh is heir to—’tis a consummation<br><br>
+        
+        Devoutly to be wished! To die, to sleep.<br><br>
+        
+        To sleep, perchance to dream—ay, there’s the rub,<br><br>
+        
+        For in that sleep of death what dreams may come<br><br>
+        
+        When we have shuffled off this mortal coil,<br><br>
+        
+        Must give us pause. There’s the respect<br><br>
+        
+        That makes calamity of so long life.<br><br>
+        
+        For who would bear the whips and scorns of time,<br><br>
+        
+        Th’ oppressor’s wrong, the proud man’s contumely,<br><br>
+        
+        The pangs of despised love, the law’s delay,<br><br>
+        
+        The insolence of office, and the spurns<br><br>
+        
+        That patient merit of th’ unworthy takes,<br><br>
+        
+        When he himself might his quietus make<br><br>
+        
+        With a bare bodkin? Who would fardels bear,<br><br>
+        
+        To grunt and sweat under a weary life,<br><br>
+        
+        But that the dread of something after death,<br><br>
+        
+        The undiscovered country from whose bourn<br><br>
+        
+        No traveler returns, puzzles the will<br><br>
+        
+        And makes us rather bear those ills we have<br><br>
+        
+        Than fly to others that we know not of?<br><br>
+        
+        Thus conscience does make cowards of us all,<br><br>
+        
+        And thus the native hue of resolution<br><br>
+        
+        Is sicklied o’er with the pale cast of thought,<br><br>
+        
+        And enterprises of great pitch and moment<br><br>
+        
+        With this regard their currents turn awry,<br><br>
+        
+        And lose the name of action. —Soft you now,<br><br>
+        
+        The fair Ophelia! —Nymph, in thy orisons<br><br>
+        
+        Be all my sins remembered.</p><br>
+    <input class="box" type="checkbox" name="foo" value="bar" /><br>
+    <input class="box" type="checkbox" name="foo0" value="bar" /><br>
+    <input class="box" type="checkbox" name="foo1" value="bar" /><br>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/buttonmove.js"></script>
+    <script src="js/imgmove.js"></script>
+    <script src="js/textmove.js"></script>
+    <script src="js/checkboxredirectlogic.js"></script>
+    <script src="js/disablekeyboardscrolling.js"></script>
+</body>
+ 
+</html>
