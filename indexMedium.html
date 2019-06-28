@@ -33,14 +33,7 @@
             width: 450px;
         }
         #main .icon {
-            padding: 20px;
-            border-radius: 80px;
-            background-color: red !important;
             position:absolute;
-            top:10px;
-            left:10px;
-            height: 128px !important;
-            width: 128px !important;
         }
  
         #main .icon:nth-child(2n) {
@@ -82,18 +75,15 @@
  
 <body>
     <h2><a href="index.html">Back to Home Page</a></h2>
-    <div id="main">
-        <button class="icon" onclick="set_checked(true,'foo')" style="animation-delay: -0.75s; animation-duration: .25s; background: url(img/buttons/red-button-for-web.png)" height="128" width="128">        
-    </div>
-    <div id="img">
-        <a href="#" onclick="set_checked(true,'foo0')"><img class="icon" src="img/buttons/red-button-for-web.png" style="animation-delay: -0.75s; animation-duration: .25s;height: 128; width: 128" height="128" width="128" alt="Jumping image"></a>
-    </div>
     <div id="textbox">
-        <input onclick="set_checked(true,'foo1')" class="icon" type="text" style="animation-delay: -0.25s; animation-duration: .30s;height: 128; width: 128">
+        <input onclick="set_checked(true,'foo1')" class="icon" type="text" style="animation-delay: -0.25s; animation-duration: .30s;" height="512" width="512">
     </div>
     <input class="box" type="checkbox" name="foo" value="bar" /><br>
-    <input class="box" type="checkbox" name="foo0" value="bar" /><br>
+    <!--<input class="box" type="checkbox" name="foo0" value="bar" /><br>-->
     <input class="box" type="checkbox" name="foo1" value="bar" /><br>
+    <div id="main">
+        <button type="button" class="icon" onclick="set_checked(true,'foo')" style="animation-delay: -0.75s; animation-duration: .25s; height: 64px; width: 128px;">Hello</button>   
+    </div>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
