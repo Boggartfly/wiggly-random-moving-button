@@ -20,13 +20,19 @@
  
 <body>
     <table>
-        <tr><td><input id="img" type="image"  src="img/cat.svg"></td><td><input id="img" type="image" src="img/car.svg"></td></tr>
-        <tr><td><input id="img" type="image" src="img/burger.png"></td><td><input id="img" type="image" src="img/cat.svg"></td></tr>
+        <tr><td><input id="img" type="image"  src="img/cat.svg" onclick="iscatblind()"></td><td><input id="img" type="image" src="img/car.svg" onclick="notcat()"></td></tr>
+        <tr><td><input id="img" type="image" src="img/burger.png" onclick="notcat()"></td><td><input id="img" type="image" src="img/cat.svg" onclick="iscatblind()"></td></tr>
     </table>
+    <br>
+    <p>Which image is a cat?</p>
+    <div id="result">
+
+    </div>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="js/cat.js"></script>
 </body>
  
 </html>

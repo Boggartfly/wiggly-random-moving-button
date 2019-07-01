@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Blindness Activity</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: rgba(0,0,0,1.0);
+        }
+        #overlay {
+            width: 100%;
+            height: 100%;
+            
+        }
+        #img {
+            width:128px;
+            height:128px;
+            border:1px solid black;
+            opacity: 0;
+        }
+        table {
+            border:1px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="overlay">
+    <table>
+        <tr><td><input id="img" type="image"  src="img/cat.svg" onclick="iscat()" alt="image of cat"></td><td><input id="img" type="image" src="img/car.svg" onclick="notcat()" alt="image of car"></td></tr>
+        <tr><td><input id="img" type="image" src="img/burger.png" onclick="notcat()" alt="image of burger"></td><td><input id="img" type="image" src="img/cat.svg" onclick="iscat()" alt="image of cat"></td></tr>
+    </table>
+    <br>
+    <p>Which image is a cat?</p>
+    <div id="result"></div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/cat.js"></script> 
+</body>
+ 
+</html>
