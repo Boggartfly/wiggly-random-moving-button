@@ -12,3 +12,6 @@ function iscatblind(){
 function redirectToAccessible(){
     window.location.href = "./blindness-accessible.html";
 }
+function redirectFirst(){
+    window.location.href = "./blindness-instruction.html";
+}
