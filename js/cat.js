@@ -1,6 +1,6 @@
 function iscat(){
     $('#result').html('<p>It\'s a cat!</p> \
-    <br><a href="blindness-inaccessible.html">\
+    <br><a href="blindness-instruction.html">\
     Next, try with blindness simulation and without accessibility features</a>');
 }
 function notcat(){
