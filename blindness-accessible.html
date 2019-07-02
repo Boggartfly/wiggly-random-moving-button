@@ -26,11 +26,17 @@
             background: white !important;
             width: max-content;
         }
+        #overlay {
+            width: max-content;
+            background-color: white !important;
+        }
     </style>
 </head>
  
 <body>
     <div id="overlay">
+            <p>Please make sure that ChromeVox is turned on.</p>
+    </div>
     <table>
         <tr><td><input id="img" type="image"  src="img/c1.svg" onclick="iscatblind()" alt="image of cat"></td><td><input id="img" type="image" src="img/c2.svg" onclick="notcat()" alt="image of car"></td></tr>
         <tr><td><input id="img" type="image" src="img/b.png" onclick="notcat()" alt="image of burger"></td><td><input id="img" type="image" src="img/c1.svg" onclick="iscatblind()" alt="image of cat"></td></tr>
@@ -38,12 +44,13 @@
     <br>
     <p>Which image is a cat?</p>
     <div id="result"></div>
-    </div>
+    
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-  <script src="js/cat.js"></script> 
+  <script src="js/cat.js"></script>
+  <script src="js/redirect.js"></script> 
 </body>
  
 </html>
