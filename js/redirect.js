@@ -16,3 +16,6 @@ function redirectToConclusion(){
 function redirectToAccessibleInstruction(){
     window.location.href = "./accessible-instruction.html";
 }
+function redirectToCodeChange(){
+    window.location.href = "./codechange.html";
+}
