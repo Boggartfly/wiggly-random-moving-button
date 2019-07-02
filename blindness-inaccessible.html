@@ -9,9 +9,8 @@
             background-color: rgba(0,0,0,1.0);
         }
         #overlay {
-            width: 100%;
-            height: 100%;
-            
+            width: max-content;
+            background-color: white !important;
         }
         #img {
             width:128px;
@@ -27,14 +26,15 @@
  
 <body>
     <div id="overlay">
+        <p>Please make sure that ChromeVox is turned on.</p>
+    </div>
     <table>
-        <tr><td><input id="img" type="image"  src="img/c1.svg" onclick="iscatblind()" alt="image of cat"></td><td><input id="img" type="image" src="img/c2.svg" onclick="notcat()" alt="image of car"></td></tr>
-        <tr><td><input id="img" type="image" src="img/b.png" onclick="notcat()" alt="image of burger"></td><td><input id="img" type="image" src="img/c1.svg" onclick="iscatblind()" alt="image of cat"></td></tr>
+        <tr><td><input id="img" type="image"  src="img/c1.svg" onclick="redirectToAccessible()" ></td><td><input id="img" type="image" src="img/c2.svg" onclick="redirectToAccessible()"></td></tr>
+        <tr><td><input id="img" type="image" src="img/b.png" onclick="redirectToAccessible()" ></td><td><input id="img" type="image" src="img/c1.svg" onclick="redirectToAccessible()"></td></tr>
     </table>
     <br>
     <p>Which image is a cat?</p>
     <div id="result"></div>
-    </div>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
