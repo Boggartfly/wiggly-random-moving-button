@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Blindness Activity</title>
+    <style>
+        body {
+            padding: 25px;
+        }
+        #img {
+            width:128px;
+            height:128px;
+            border:1px solid black;
+        }
+        table {
+            border:1px solid black;
+        }
+        #blur-most {
+            filter: blur(5px);
+            width: 256px;
+            height: 256px;
+        }
+        #blur-more {
+            filter: blur(2px);
+            width: 256px;
+            height: 256px;
+        }
+        #blur-least {
+            filter: blur(1px);
+            width: 256px;
+            height: 256px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <h2>Most blurred</h2><br>
+    <img id="blur-most" src="img/c2.svg"><br>
+    <h2>More blurred</h2><br>
+    <img id="blur-more" src="img/c2.svg"><br>
+    <h2>Least blurred</h2><br>
+    <img id="blur-least" src="img/c2.svg"><br>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="js/redirect.js"></script>
+</body>
+ 
+</html>
